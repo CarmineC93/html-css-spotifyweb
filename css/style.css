@@ -88,7 +88,7 @@ li{
     margin: 1rem; 
 }
 
-.album-space.col{
+.album-space .col{
     /* debug */
     border: 1px blue solid; 
 }
@@ -97,7 +97,7 @@ li{
     /* debug */
     background-color: pink;
     margin: 1rem;
-    width: calc(100vh / 6);
+    width: calc(100% / 6 - 2rem);
 }
 
 /* header */

@@ -1,0 +1,46 @@
+
+/************************************************
+    SMALL DESKTOP VIEW (until 1100px)
+ ************************************************/
+
+@media screen and (max-width: 1100px){
+
+    .album-space .col{
+        flex-wrap: wrap;
+
+    }
+
+    .album-space .song-card{
+        width: calc(100% / 4 - 2rem);
+    }
+
+
+
+}
+
+/************************************************
+    TABLET VIEW (until 700px)
+ ************************************************/
+
+ @media screen and (max-width: 700px){
+
+    .album-space .song-card{
+        width: calc(100% / 2 - 2rem);
+    }
+
+
+
+    
+}
+
+
+/************************************************
+    PHONE VIEW (until 600px)
+ ************************************************/
+
+ @media screen and (max-width: 600px){
+
+
+
+    
+}
