@@ -40,6 +40,22 @@
 
  @media screen and (max-width: 600px){
 
+    .sidebar{
+        display: none;
+    }
+
+    .mobile-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header, .main-view {
+        width: calc(100% - 70px) ;
+
+
+
+
 
 
     
