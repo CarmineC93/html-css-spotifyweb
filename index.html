@@ -8,6 +8,9 @@
     <!-- link style -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,39 +129,41 @@
 
 
             <!-- player-bar -->
-            <footer class="player-bar">
+            <footer class="player-bar flex">
                 <!-- sx-side -->
-                <div class="sx-side">
-                    <div>
-                        <img src="" alt="">
-                        <h6></h6>
-                        <p></p>
+                <div class="sx-side flex">
+                    <div class="preview flex">
+                        <img src="img/sinister.jpeg" alt="">
+                        <span>
+                            <h6>Sinister</h6>
+                            <p>Brano Nome</p>
+                        </span>
                     </div>
-                    <div><a href=""></a></div>
-                    <div><a href=""></a></div>
+                    <div><a class="clean" href=""><i class="fa-regular fa-heart"></i></a></div>
+                    <div><a class="clean" href=""><i class="fa-regular fa-folder"></i></a></div>
                 </div>
 
                 <!-- central: bar space -->
                 <div class="progress-bar">
-                    <div class="upper-bar">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="upper-bar flex">
+                        <div><i class="fa-solid fa-shuffle"></i></div>
+                        <div><i class="fa-solid fa-backward-step"></i></div>
+                        <div><i class="fa-solid fa-circle-play"></i></div>
+                        <div><i class="fa-solid fa-forward-step"></i></div>
+                        <div><i class="fa-solid fa-rotate-right"></i></div>
                     </div>
-                    <div class="lower-bar">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="lower-bar flex">
+                        <div>0:25</div>
+                        <div><span></span></div>
+                        <div>4:35</div>
                     </div>
                 </div>
 
                 <!-- dx-side -->
-                <div class="dx-side">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="dx-side flex">
+                    <div><a class="clean" href=""><i class="fa-solid fa-list-ul"></i></a></div>
+                    <div><a class="clean" href=""><i class="fa-solid fa-display"></i></a></div>
+                    <div><a class="clean" href=""><i class="fa-solid fa-volume-high"></i></a></div>
                     <div></div>
                 </div>
             </footer>

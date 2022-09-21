@@ -98,7 +98,6 @@ li{
     background-color: pink;
     margin: 1rem;
     width: calc(100vh / 6);
-
 }
 
 /* header */
@@ -122,10 +121,15 @@ header{
 
 .player-bar{
     height: 80px;
+    justify-content: space-between;
+    align-items: center;
     /* debug */
     background-color: aquamarine;
+
 }
 
-
+.preview img{
+    height: 50px;
+}
 
 
