@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+/* CUSTOM PROPERTIES */
+:root{
+    /* palette */
+    --black-col:#000000;
+    --main-bg-col:#141922;
+    --footer-bg-col:#282828;
+    --text-col-sidebar: #646464;
+    --white-col: #ffff;
+    --text-main-nav:#7D7F84;
+
+    /* spaces */
+    --main-width:calc(100% - 170px);
+    --mobile-main-width:calc(100% - 70px);
+    --container-height:calc(100vh - 80px);
+
+
+
+}
+
 /* UTILITIES */
 
 .flex{
@@ -15,6 +34,56 @@
     text-decoration: none;
     color: inherit;
 }
+
+.pd1{
+    padding: 1rem;
+}
+
+.mrgn05-0{
+    margin: 0.5rem 0; 
+}
+
+.mrgn0-05{
+    margin: 0 0.5rem 0 0;
+}
+
+.mrgn1-0{
+    margin: 1rem 0;
+}
+
+.fntsz06{
+    font-size: 0.6rem;
+}
+
+.fntsz07{
+    font-size: 0.7rem;
+}
+
+.fntsz08{
+    font-size: 0.8rem;
+}
+
+.lnhgt1{
+    line-height: 1rem;
+}
+
+.vrtal-md{
+    vertical-align: middle;
+}
+
+.vrtal-sb{
+    vertical-align: sub;
+}
+
+.col-wht{
+    color: var(--white-col);
+}
+
+.col.side-txt{
+    background-color: var(--text-col-sidebar);
+}
+
+
 
 /* COMMON */
 
@@ -40,7 +109,7 @@ li{
 /* CONTAINER */
 
 .container{
-    height:calc(100vh - 80px);
+    height:var(--container-height);
     
 
     /* debug */
@@ -51,28 +120,48 @@ li{
 
 .sidebar{
     width: 170px;
-    height:calc(100vh - 80px);
+    height:var(--container-height);
 
     flex-direction: column;
     justify-content: space-between;
     
+    background-color: var(--black-col); 
+    color: var(--text-col-sidebar);
 
-    /* debug */
-    background-color: red;
 }
+
+.sidebar .logo img{
+    height: 32px;
+}
+
+.sidebar img{
+    height: 20px;
+}
+
+.sidebar .create-pl img{
+    height: 30px;
+}
+
+
 
 /* Mobile sidebar */
     .mobile-bar{ 
         display: none;   
         width:70px;
-        height:calc(100vh - 80px);
+        height:var(--container-height);
+        background-color: var(--black-col); 
+        color: var(--text-col-sidebar);   
+    }
+
+    .mobile-bar img{
+        height: 25px;
     }
 
 
 /* Main-view */
 
 .main-view{
-    width: calc(100% - 170px);
+    width: var(--main-width);
     flex-direction: column;
     overflow: auto;
     
@@ -112,7 +201,7 @@ li{
 
 header{
     height: 80px;
-    width: calc(100% - 170px) ;
+    width: var(--main-width);
     position: fixed;
     top: 0;
     right: 0;
