@@ -45,8 +45,12 @@
     margin: 0.5rem 0; 
 }
 
-.mrgn0-05{
+.mrgn-rgt{
     margin: 0 0.5rem 0 0;
+}
+
+.mrgn-tp{
+    margin-top: 0.5rem;
 }
 
 .mrgn1{
@@ -202,6 +206,7 @@ header{
     height: var(--header-height);
     width: var(--main-width);
     position: fixed;
+    z-index: 999;
     top: 0;
     right: 0;
     flex-direction: row-reverse;
@@ -240,21 +245,77 @@ header .btn{
 }
 
 
-/* Player-bar */
+/* Footer PLAYER-BAR */
+
 .player-bar{
     height: var(--footer-height);
     justify-content: space-between;
     align-items: center;
     background-color: var(--footer-bg-col);
-
+    
+    position: relative;  /*per non far sovrappore il testo della sidebar */
+    z-index: 50;
 }
 
 .preview img{
     height: 50px;
 }
 
-/*Footer PLAYER-BAR */
-
 .sx-side, .dx-side{
-    width: 200px;
+    width: 210px;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 0.8rem;
 }
+
+.progress-bar{
+    width: 40%;
+}
+
+footer .progress-bar .upper-bar{
+    justify-content: center;
+}
+
+footer .progress-bar .lower-bar{
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar .player{
+    transform: scale(2);
+}
+
+.progress-bar .duration{
+    border-radius: 40px;
+    background-color: var(--text-col-sidebar);
+    width: 300px;
+    height: 3px;
+    position: relative;
+}
+.progress-bar .duration .already-played{
+    border-radius: 40px;
+    background-color: var(--white-col);
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+
+
+.player-bar .dx-side .range{
+    border-radius: 40px;
+    background-color: var(--text-col-sidebar);
+    width: 50%;
+    height: 3px;
+    position: relative;
+}
+
+.player-bar .dx-side .range .volume{
+    border-radius: 40px;
+    background-color: var(--white-col);
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+

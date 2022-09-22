@@ -53,6 +53,11 @@
 
     header, .main-view {
         width:var(--mobile-main-width) ;
+    }
+
+    .player-bar .dtrp{
+        display: none;
+    }
 
 
 

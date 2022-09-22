@@ -38,17 +38,17 @@
                             <ul>
                                 <li class="mrgn05-0 lnhgt1"> 
                                     <a class="clean fntsz07 vrtal-md fntwg6" href="">
-                                        <img class="vrtal-md mrgn0-05" src="img/home.svg" alt=""> Home
+                                        <img class="vrtal-md mrgn-rgt" src="img/home.svg" alt=""> Home
                                     </a> 
                                 </li>
                                 <li class="mrgn05-0 lnhgt1"> 
                                     <a class="clean fntsz07 vrtal-md fntwg6" href="">
-                                        <img class="vrtal-md mrgn0-05" src="img/search.svg" alt=""> Cerca
+                                        <img class="vrtal-md mrgn-rgt" src="img/search.svg" alt=""> Cerca
                                     </a> 
                                 </li>
                                 <li class="mrgn05-0 lnhgt1"> 
                                     <a class="clean fntsz07 vrtal-md fntwg6" href="">
-                                        <img class="vrtal-md mrgn0-05" src="img/libreria.svg" alt=""> La tua libreria
+                                        <img class="vrtal-md mrgn-rgt" src="img/libreria.svg" alt=""> La tua libreria
                                     </a> 
                                 </li>
                             </ul>
@@ -57,7 +57,7 @@
                             <h3 class="fntsz08 col-wht mrgn1-0 fntwg6">PLAYLIST</h3>
                             <div class="create-pl fntsz08 lnhgt1"> 
                                 <a class="clean vrtal-md fntwg6" href="">
-                                    <img class="vrtal-md mrgn0-05" src="img/square-plus-solid.svg" alt="">Crea Playlist
+                                    <img class="vrtal-md mrgn-rgt" src="img/square-plus-solid.svg" alt="">Crea Playlist
                                 </a>
                             </div>
                             <div class="new-pl">
@@ -84,7 +84,7 @@
 
                         <div class="account lnhgt1">
                             <a class="clean fntsz08 vrtal-md fntwg6" href="">
-                                <img class="vrtal-md mrgn0-05" src="img/profile.svg" alt=""> 
+                                <img class="vrtal-md mrgn-rgt" src="img/profile.svg" alt=""> 
                                 <strong class="vrtal-sb col-wht">John Doe</strong> 
                             </a>
                         </div>
@@ -267,37 +267,41 @@
                 <div class="sx-side flex mrgn0-1">
                     <div class="preview flex">
                         <img src="img/sinister.jpeg" alt="">
-                        <span>
-                            <h6>Sinister</h6>
-                            <p>Brano Nome</p>
+                        <span class="lnhgt1 mrgn0-1 mrgn-tp dtrp">
+                            <h5 class="mrgn-tp col-wht">Sinister</h5>
+                            <h6 class="col-side-txt">Brano Nome</h6>
                         </span>
                     </div>
-                    <div><a class="clean" href=""><i class="fa-regular fa-heart"></i></a></div>
-                    <div><a class="clean" href=""><i class="fa-regular fa-folder"></i></a></div>
+                    <a class="clean mrgn-rgt" href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="clean" href=""><i class="fa-regular fa-folder"></i></a>
                 </div>
 
                 <!-- central: bar space -->
                 <div class="progress-bar mrgn0-1">
                     <div class="upper-bar flex">
-                        <div><i class="fa-solid fa-shuffle"></i></div>
-                        <div><i class="fa-solid fa-backward-step"></i></div>
-                        <div><i class="fa-solid fa-circle-play"></i></div>
-                        <div><i class="fa-solid fa-forward-step"></i></div>
-                        <div><i class="fa-solid fa-rotate-right"></i></div>
+                        <div class="mrgn1"><i class="fa-solid fa-shuffle"></i></div>
+                        <div class="mrgn1"><i class="fa-solid fa-backward-step"></i></div>
+                        <div class="player mrgn1"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="mrgn1"><i class="fa-solid fa-forward-step"></i></div>
+                        <div class="mrgn1"><i class="fa-solid fa-rotate-right"></i></div>
                     </div>
                     <div class="lower-bar flex">
-                        <div>0:25</div>
-                        <div><span></span></div>
-                        <div>4:35</div>
+                        <h6 class="mrgn0-1">0:25</h6>
+                        <span class="duration">
+                            <span class="already-played"></span>
+                        </span>                        
+                        <h6 class="mrgn0-1">4:35</h6>
                     </div>
                 </div>
 
                 <!-- dx-side -->
-                <div class="dx-side flex mrgn0-1">
-                    <div><a class="clean" href=""><i class="fa-solid fa-list-ul"></i></a></div>
-                    <div><a class="clean" href=""><i class="fa-solid fa-display"></i></a></div>
-                    <div><a class="clean" href=""><i class="fa-solid fa-volume-high"></i></a></div>
-                    <div></div>
+                <div class="dx-side flex">
+                    <a class="clean" href=""><i class="fa-solid fa-list-ul"></i></a>
+                    <a class="clean" href=""><i class="fa-solid fa-display"></i></a>
+                    <a class="clean" href=""><i class="fa-solid fa-volume-high"></i></a>
+                    <span class="range dtrp">
+                        <span class="volume"></span>
+                    </span>
                 </div>
             </footer>
             <!-- /player-bar -->
