@@ -42,7 +42,7 @@
 }
 
 .mrgn05-0{
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
 }
 
 .mrgn-rgt{
@@ -162,30 +162,43 @@ p{
 
     flex-direction: column;
     justify-content: space-between;
-    
-    background-color: var(--black-col); 
+
+    background-color: var(--black-col);
     color: var(--text-col-sidebar);
 }
 
+.sidebar .create-pl img{
+    height: 30px;
+}
 .sidebar .logo img{
     height: 32px;
 }
 
 .sidebar img{
     height: 20px;
+    opacity: 0.5;
 }
 
-.sidebar .create-pl img{
-    height: 30px;
+.sidebar li:hover img,
+.sidebar .create-pl:hover img,
+li:hover a,
+a:not(.create-pl>a):hover,
+i:hover {
+    opacity: 1;
+    color: white;
+}
+
+.sidebar .create-pl:hover a{
+    color: var(--white-col);
 }
 
 /* Mobile sidebar */
-    .mobile-bar{ 
-        display: none;   
+    .mobile-bar{
+        display: none;
         width:var(--mobilebar-width);
         height:var(--container-height);
-        background-color: var(--black-col); 
-        color: var(--text-col-sidebar);   
+        background-color: var(--black-col);
+        color: var(--text-col-sidebar);
     }
 
     .mobile-bar img{
@@ -215,11 +228,18 @@ header{
 }
 
 header .btn{
+    margin-right: 2rem;
     padding: 0.5rem 2rem ;
     border: 2px solid var(--white-col);
     border-radius: 25px;
     display: inline-block;
 }
+
+header .btn:hover,
+.sidebar .account:hover img{
+    transform: scale(1.1);
+}
+
 
 /* album space */
 .album-space{
@@ -244,6 +264,21 @@ header .btn{
     margin-top: 1rem;
 }
 
+.song-card .cover{
+    position: relative;
+}
+
+.song-card .ghost{
+    position: absolute;
+    transform: translate(-50%, -50%);    
+    height: 50px;
+    display: none;
+}
+
+.song-card:hover .ghost{
+    display: block;
+}
+
 
 /* Footer PLAYER-BAR */
 
@@ -252,7 +287,7 @@ header .btn{
     justify-content: space-between;
     align-items: center;
     background-color: var(--footer-bg-col);
-    
+
     position: relative;  /*per non far sovrappore il testo della sidebar */
     z-index: 50;
 }
@@ -284,6 +319,13 @@ footer .progress-bar .lower-bar{
 .progress-bar .player{
     transform: scale(2);
 }
+.scl:hover{
+    transform: scale(1.5);
+}
+
+.progress-bar .player:hover{
+    transform: scale(2.5);
+}
 
 .progress-bar .duration{
     border-radius: 40px;
@@ -292,6 +334,7 @@ footer .progress-bar .lower-bar{
     height: 3px;
     position: relative;
 }
+
 .progress-bar .duration .already-played{
     border-radius: 40px;
     background-color: var(--white-col);
@@ -300,7 +343,6 @@ footer .progress-bar .lower-bar{
     position: absolute;
     left: 0;
 }
-
 
 .player-bar .dx-side .range{
     border-radius: 40px;
